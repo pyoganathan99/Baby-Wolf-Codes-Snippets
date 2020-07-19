@@ -1,0 +1,15 @@
+.card {
+    background: #ffffff;
+
+    .title {
+        font-size: 1.2em;
+    }
+
+    .body {
+        font-size: 0.8em;
+    }
+
+    &:hover {
+        background: #eeeeee;
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bellota&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        font-family: 'Bellota', cursive;
+    }
+
+    #the-element {
+        cursor: pointer;
+    }
+
+    #tooltip {
+        opacity: 0;
+        transition-duration: 200ms;
+    }
+
+    #the-element {
+        box-shadow: #007bff33 2px 4px 12px;
+        transition-duration: 200ms;
+    }
+
+    #the-element:hover {
+        box-shadow: #007bff66 2px 4px 18px;
+        transform: scale(1.01);
+    }
+
+    #the-element:active {
+        box-shadow: #007bff99 2px 4px 36px;
+        transform: scale(1.02);
+    }
+
+    #the-element:hover~#tooltip {
+        opacity: 1;
+    }
+
+    #container>span:nth-child(odd) {
+        background: #eeeeee;
+    }
+
+    #container>span:nth-child(even) {
+        background: #dddddd;
+    }
+</style>
+
+<body>
+    <div class="vw-100 vh-100 d-flex justify-content-center align-items-center">
+        <div id="container" class="d-flex flex-column">
+            <span class="px-3 py-2">Hi</span>
+            <span class="px-3 py-2">How are you today?</span class="px-3 py-2">
+            <span class="px-3 py-2">
+                You are awesome!</span>
+            <span class="px-3 py-2">See you around!</span>
+        </div>
+    </div>
+</body>
+
+</html>

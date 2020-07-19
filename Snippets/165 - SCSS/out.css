@@ -1,0 +1,14 @@
+.card {
+  background: #ffffff;
+}
+.card .title {
+  font-size: 1.2em;
+}
+.card .body {
+  font-size: 0.8em;
+}
+.card:hover {
+  background: #eeeeee;
+}
+
+/*# sourceMappingURL=out.css.map */
